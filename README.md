@@ -14,6 +14,6 @@ Arguments:
   [URLS]...  URL of telegram graph gallery
 
 Options:
-  -d, --dir <DIR>  Directory to save the imges
+  -d, --dir <DIR>  Directory to save the images
   -h, --help       Print help
 ```
