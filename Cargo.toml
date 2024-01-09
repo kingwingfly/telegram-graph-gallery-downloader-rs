@@ -1,6 +1,6 @@
 [package]
 name = "telegram_graph_downloader"
-version = "0.0.2"
+version = "0.0.3"
 edition = "2021"
 description = "Telegram graph downloader"
 repository = "https://github.com/kingwingfly/telegram-graph-gallery-downloader-rs"
