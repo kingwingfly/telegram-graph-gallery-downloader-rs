@@ -1,9 +1,9 @@
 [package]
 name = "telegram_graph_downloader"
-version = "0.0.5"
+version = "0.0.6"
 edition = "2021"
 description = "Telegram graph downloader"
-document = "https://docs.rs/telegram_graph_downloader"
+documentation = "https://docs.rs/telegram_graph_downloader"
 repository = "https://github.com/kingwingfly/telegram-graph-gallery-downloader-rs"
 license = "MIT"
 
