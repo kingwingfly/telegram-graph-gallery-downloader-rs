@@ -3,12 +3,13 @@ name: Publish
 on:
   push:
     branches: [dev]
+  workflow_dispatch:
 
 jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@master
 
       - name: run tests
         run: .github/scripts/test.sh
@@ -16,26 +17,4 @@ jobs:
       - name: publish crates
         run: |
           cargo login ${{ secrets.crates_io }}
-          cargo publish --dry-run
-
-  release:
-    permissions:
-      contents: write
-    strategy:
-      matrix:
-        os: [ubuntu-latest, macos-latest, windows-latest]
-
-    runs-on: ${{ matrix.os }}
-
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Extract version
-        id: extract-version
-        run: echo "VERSION=$(grep -oP '^version = "\K[^"]+' Cargo.toml | awk '{$1=$1;print}')" >> $GITHUB_OUTPUT
-
-      - name: publish bin
-        run: |
-          cargo build --release
-          gh auth login --with-token ${{ secrets.GITHUB_TOKEN }}
-          gh release create ${{ steps.extract-version.outputs.VERSION }} -t ${{ steps.extract-version.outputs.VERSION }} target/release/telegram_graph_downloader
+          cargo publish
