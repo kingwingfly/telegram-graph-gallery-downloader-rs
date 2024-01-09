@@ -1,0 +1,11 @@
+[package]
+name = "telegram_graph_downloader_examples"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+telegram_graph_downloader = { path = ".." }
+
+[[example]]
+name = "coser"
+path = "coser.rs"

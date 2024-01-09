@@ -1,0 +1,11 @@
+[package]
+name = "telegram_graph_downloader_tests"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+telegram_graph_downloader = { path = ".." }
+
+[[test]]
+name = "download_test"
+path = "download_test.rs"

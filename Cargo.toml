@@ -1,0 +1,17 @@
+[package]
+name = "telegram_graph_downloader"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+reqwest = { version = "0.11.23" }
+tokio = { version = "1.35.1", features = ["macros", "rt-multi-thread"] }
+scraper = { version = "0.18.1" }
+indicatif = { version = "0.17.7", optional = true}
+clap = { version = "4.4.14", features = ["derive"] }
+
+[features]
+default = ["indicatif"]
+indicatif = ["dep:indicatif"]
