@@ -12,10 +12,10 @@ license = "MIT"
 reqwest = { version = "0.11.23" }
 tokio = { version = "1.35.1", features = ["macros", "rt-multi-thread"] }
 scraper = { version = "0.18.1" }
-indicatif = { version = "0.17.7", optional = true}
+indicatif = { version = "0.17.7", optional = true }
 clap = { version = "4.4.14", features = ["derive"] }
 
-[build.release]
+[profile.release]
 lto = true
 opt-level = 3
 codegen-units = 1

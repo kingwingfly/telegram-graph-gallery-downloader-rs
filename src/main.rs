@@ -3,7 +3,7 @@ use clap::Parser;
 /// A downloader for telegram graph gallery
 #[derive(Parser)]
 struct Args {
-    /// Directory to save the imges
+    /// Directory to save the images
     #[arg(short, long)]
     dir: String,
     /// URL of telegram graph gallery
