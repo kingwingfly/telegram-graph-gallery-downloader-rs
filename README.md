@@ -1,19 +1,6 @@
-# Crate
-This can be use as a crate;
+# Yanked
+For my poor English, the name of this crate is wrong and misunderstanding.
 
-# CLI
-Run `cargo build --release` to use the CLI.
+This crate is actually a crawler, which is used to download pictures in telegram photo gallery, like this domain https://telegra.ph/xxx.
 
-```sh
-$ telegram_graph_downloader -h
-A downloader for telegram graph gallery
-
-Usage: telegram_graph_downloader --dir <DIR> [URLS]...
-
-Arguments:
-  [URLS]...  URL of telegram graph gallery
-
-Options:
-  -d, --dir <DIR>  Directory to save the images
-  -h, --help       Print help
-```
+[Here](https://crates.io/crates/telegram_photo_gallery_downloader) is new.
