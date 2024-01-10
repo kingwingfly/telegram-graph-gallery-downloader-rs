@@ -9,7 +9,7 @@ async fn main() {
         "https://telegra.ph/%E6%A1%9C%E4%BA%95%E5%AE%81%E5%AE%81-%E7%99%BD%E8%89%B2%E7%83%AD%E8%A3%A4%E6%AF%94%E5%9F%BA%E5%B0%BC-70P-271GB-12-26"
     ];
     for url in urls {
-        telegram_graph_downloader::download(std::env::var("TEST_SAVE_DIR").unwrap(), url)
+        telegram_photo_gallery_downloader::download(std::env::var("TEST_SAVE_DIR").unwrap(), url)
             .await
             .unwrap();
     }

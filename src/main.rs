@@ -14,7 +14,7 @@ struct Args {
 async fn main() {
     let args = Args::parse();
     for url in args.urls {
-        telegram_graph_downloader::download(args.dir.clone(), url)
+        telegram_photo_gallery_downloader::download(args.dir.clone(), url)
             .await
             .unwrap();
     }
