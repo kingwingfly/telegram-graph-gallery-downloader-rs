@@ -6,7 +6,7 @@ type BoxResult<T> = Result<T, Box<dyn std::error::Error>>;
 /// Download images from telegram graph gallery
 /// # Example
 /// ```no_run
-/// use telegram_graph_downloader::download;
+/// use telegram_photo_gallery_downloader::download;
 ///
 /// # async fn run() {
 /// download("dir_to_save", "https://telegra.ph/xxx").await.unwrap();
