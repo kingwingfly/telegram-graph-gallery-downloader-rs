@@ -1,6 +1,6 @@
 [package]
 name = "telegram_graph_downloader"
-version = "0.0.6"
+version = "0.0.7"
 edition = "2021"
 description = "Telegram graph downloader"
 documentation = "https://docs.rs/telegram_graph_downloader"
