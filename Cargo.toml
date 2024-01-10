@@ -1,10 +1,10 @@
 [package]
-name = "telegram_graph_downloader"
-version = "0.0.7"
+name = "telegram_photo_gallery_downloader"
+version = "0.0.1"
 edition = "2021"
-description = "Telegram graph downloader"
-documentation = "https://docs.rs/telegram_graph_downloader"
-repository = "https://github.com/kingwingfly/telegram-graph-gallery-downloader-rs"
+description = "Telegram photo gallery downloader"
+documentation = "https://docs.rs/telegram_photo_gallery_downloader"
+repository = "https://github.com/kingwingfly/telegram-photo-gallery-downloader-rs"
 license = "MIT"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html

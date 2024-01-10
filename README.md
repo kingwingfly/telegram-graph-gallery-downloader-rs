@@ -1,6 +1,24 @@
-# Yanked
-For my poor English, the name of this crate is wrong and misunderstanding.
+On telegram, there are many groups share pictures or photos through gallery in links like https://telegra.ph/xxx, and usually you want to download them for they are so beautiful and useful.
 
-This crate is actually a crawler, which is used to download pictures in telegram photo gallery, like this domain https://telegra.ph/xxx.
+# Crate
+This can be use as a crate;
 
-[Here](https://crates.io/crates/telegram_photo_gallery_downloader) is new.
+features:
+- indicatif: to show the process bar, turned on by default
+
+# CLI
+Run `cargo build --release` to build the CLI.
+
+```sh
+$ telegram_graph_downloader -h
+A downloader for telegram graph gallery
+
+Usage: telegram_graph_downloader --dir <DIR> [URLS]...
+
+Arguments:
+  [URLS]...  URL of telegram graph gallery
+
+Options:
+  -d, --dir <DIR>  Directory to save the images
+  -h, --help       Print help
+```
