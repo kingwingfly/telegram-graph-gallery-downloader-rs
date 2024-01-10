@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@master
 
       - name: install cargo components
-        run: rustup +nightly install cargo-clippy
+        run: rustup component add clippy
 
       - name: run tests
         run: .github/scripts/test.sh
