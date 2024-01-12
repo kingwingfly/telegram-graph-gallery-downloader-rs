@@ -6,7 +6,7 @@ struct Args {
     /// Directory to save the images
     #[arg(short, long)]
     dir: String,
-    /// URL of telegram graph gallery
+    /// URLS of telegram graph gallery
     urls: Vec<String>,
 }
 
