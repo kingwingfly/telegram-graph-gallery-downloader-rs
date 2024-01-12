@@ -1,6 +1,6 @@
 [package]
 name = "telegram_photo_gallery_downloader"
-version = "0.0.1"
+version = "0.0.2"
 edition = "2021"
 description = "Telegram photo gallery downloader"
 documentation = "https://docs.rs/telegram_photo_gallery_downloader"
