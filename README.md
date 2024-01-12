@@ -10,13 +10,13 @@ features:
 Run `cargo build --release` to build the CLI.
 
 ```sh
-$ telegram_graph_downloader -h
-A downloader for telegram graph gallery
+$ telegram_photo_gallery_downloader -h
+A downloader for telegram photo gallery
 
-Usage: telegram_graph_downloader --dir <DIR> [URLS]...
+Usage: telegram_photo_gallery_downloader --dir <DIR> [URLS]...
 
 Arguments:
-  [URLS]...  URL of telegram graph gallery
+  [URLS]...  URLS of telegram graph gallery
 
 Options:
   -d, --dir <DIR>  Directory to save the images
