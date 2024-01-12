@@ -1,6 +1,6 @@
 use clap::Parser;
 
-/// A downloader for telegram graph gallery
+/// A downloader for telegram photo gallery
 #[derive(Parser)]
 struct Args {
     /// Directory to save the images
