@@ -29,7 +29,7 @@ mod test {
 
     #[tokio::test]
     async fn download_test() {
-        let url_str = "https://telegra.ph/Asagiriai%E6%84%9B%E3%81%A1%E3%82%83%E3%82%93-%E7%88%B1%E8%8E%89%E5%B8%8C%E9%9B%85-33P-352MB-08-28";
+        let url_str = "https://telegra.ph/%E7%A5%9E%E6%B2%A2%E6%B0%B8%E8%8E%89-%E6%96%B0%E5%B9%B4%E5%A5%BD%E5%91%80%E6%96%B0%E5%B9%B4%E5%A5%BD%E5%91%80-03-22";
         download(std::env::var("TEST_SAVE_DIR").unwrap(), url_str)
             .await
             .unwrap();
